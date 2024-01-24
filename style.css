@@ -1,0 +1,17 @@
+li {
+  margin: 0.5rem;
+  font-size: 24px;
+}
+h1 {
+  color: green;
+}
+
+div {
+  margin: 2rem;
+  /* border: solid green; */
+}
+
+.title {
+  font-size: 34px;
+  color: red;
+}
