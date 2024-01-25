@@ -23,13 +23,11 @@ const squashPlayers = [
   "Amanda Sobhy: Egypt",
 ];
 
-// Remove the comment below to see the nature of our data
-// console.log(typeof squashObject);
 
 // Simple mapping using an array of strings
 squashPlayers.map((player) => {
-  // Uncomment to list out the array
-  // console.log("Mapped from an array -> Player", player);
+  // ********** Uncomment to list out the array
+  //  console.log("Mapped from an array -> Player", player);
 });
 
 // This mapping is used to create elements in the html file. Purely for demo purposes since we don't cover interacting with the DOM.
@@ -38,7 +36,7 @@ squashPlayers.map((item) => {
   const listItem = document.createElement("li");
   listItem.textContent = item;
   simple.appendChild(listItem);
-  // uncomment to see the iterator item
+  // ********* uncomment to see the iterator item
   // console.log(item);
 });
 
@@ -101,13 +99,17 @@ const squashObject = {
 
 /**
  *  Create an array from our object, we are interested in the values, again this is purely to get an object for our map.
- *    Dont worry aboput the Object.values method, it merely create our squashValuesArray
+ *    Dont worry about the Object.values method, it merely create our squashValuesArray
  **/
+
 const squashArrayValues = Object.values(squashObject);
 // Here we can log out the nature of our array and see what it looks like
+// console.log("Squash array", squashArrayValues)
+
 
 // QUESTION: WHAT TYPE OF DATA DOES THE ARRAY HOLD?. uncomment out the log to reveal the answer
 // console.log("Here is our Array", squashArrayValues);
+
 
 // This just links our code here with the html so that we can insert the data into our html page.
 const listel = document.querySelector("#lists");
@@ -118,7 +120,7 @@ const listel = document.querySelector("#lists");
  *   lots of interesring stuff to our data. The important bit here is the mapping with the map method.
  **/
 squashArrayValues.map((item) => {
-  // remove comments to see the item that is mapped
+  // ******* remove comments to see the item that is mapped
   // console.log("The player", item);
   const name = `${item.name}`;
   const ranking = `${item.ranking}`;
@@ -133,10 +135,13 @@ squashArrayValues.map((item) => {
  * Reduce function... lets find how many players from each country
  **/
 const countries = squashArrayValues.reduce((accumulator, player) => {
-  //  Remove the comment to reveal the accumulator
-  // console.log("accum", accumulator);
-  // console.log("player", player);
-  const country = player.country;
+  //  ******* Remove the comment to reveal the accumulator
+    // console.log("accum", accumulator);
+  //  console.log("player", player);
+
+   const country = player.country;
+
+  //  ********* Remove the comment
   // console.log("country", country);
 
   // first pass through the iteration the accumulator is set to empty
@@ -157,8 +162,8 @@ const countries = squashArrayValues.reduce((accumulator, player) => {
   return accumulator;
 }, {});
 
-// remove the comment to reveal the result of the reduce method.
-// console.log("The Countries", countries);
+// ******** remove the comment to reveal the result of the reduce method.
+//  console.log("The Countries", countries);
 
 // This just prints out the results on the html page
 const lands = document.querySelector("#countries");
