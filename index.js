@@ -7,7 +7,7 @@
  * The intention is to cover the usage of two array functions:- map and reduce
  * We start with a standard array and use map to iterate through the array. Then we look at taking an object, converting that into an array and iterating through that.
  * The challenge there is that often arrays contain objects that also need to be converted. Finally you are invited to complete the exercise by using map to
- * create arrays of the different countries that ther players represent.
+ * create arrays of the different countries that their players represent.
  **/
 
 // Here is our data stored in an array.
@@ -32,7 +32,7 @@ squashPlayers.map((player) => {
   // console.log("Mapped from an array -> Player", player);
 });
 
-// This mapping is used to create elements in the html file. Purely for demo pirposees since we dont cover interacting with the DOM.
+// This mapping is used to create elements in the html file. Purely for demo purposes since we don't cover interacting with the DOM.
 squashPlayers.map((item) => {
   const simple = document.querySelector("#simple");
   const listItem = document.createElement("li");
@@ -118,6 +118,8 @@ const listel = document.querySelector("#lists");
  *   lots of interesring stuff to our data. The important bit here is the mapping with the map method.
  **/
 squashArrayValues.map((item) => {
+  // remove comments to see the item that is mapped
+  // console.log("The player", item);
   const name = `${item.name}`;
   const ranking = `${item.ranking}`;
   const country = `${item.country}`;
@@ -142,7 +144,7 @@ const countries = squashArrayValues.reduce((accumulator, player) => {
     accumulator[country] = [];
   }
   /**
-   *subsequent iterations push the object with the next name key on to the incrementing the accumulator when
+   *subsequent iterations push the object with the next name key on to the accumulator, incrementing the accumulator
    * according to player.country. So the first pass shows accumulator as an empty object.
    * second pass the player.country is Egypt so the object key is set to egypt and its value 1
    * third pass is also Egypt so the egypt key value is set to 2.
