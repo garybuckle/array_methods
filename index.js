@@ -1,3 +1,17 @@
+/** This example is by no means a robust or production ready piece of code. 
+* I combines my love of the sport Squash with coding, I would encourage people to think of 
+* meaningful examples when creating projects that are designed to assist with learning.The meaning is
+* relevant then to the programmer, wether you're a scientist, love knitting, collecting stuff, you can make your code meaningful
+* by making it relevant.
+* The intention is to cover the usage of two array functions:- map and reduce 
+* We start with a standard array and use map to iterate through the array. Then we look at taking an object, converting that into an array and iterating through that.
+* The challenge there is that often arrays contain objects that also need to be converted. Finally you are invited to complete the exercise by using map to 
+* create arrays of the different countries that ther players represent.
+**/
+
+
+
+// Here is our data stored in an array.
 const squashPlayers = [
   "Ali Farag: Egypt",
   "Nour ElSherbini: Egypt",
@@ -17,6 +31,8 @@ squashPlayers.map((player) => {
   console.log("Mapped from an array -> Player", player);
 });
 
+
+
 squashPlayers.map((item) => {
   const simple = document.querySelector("#simple");
   const listItem = document.createElement("li");
@@ -25,7 +41,7 @@ squashPlayers.map((item) => {
   console.log(item);
 });
 
-//  Now lets look at a 'real world example' using an object
+//  Now lets look at a 'real world example' using an object. Objects are typically used when storing data online.
 
 const squashObject = {
   player1: {
