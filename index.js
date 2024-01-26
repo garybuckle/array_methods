@@ -152,7 +152,7 @@ const sumGames = games.reduce(
  **/
 const unknown = squashArrayValues.reduce((accumulator, player) => {
   //  ******* Remove the comment to reveal the accumulator
-  console.log("accum", accumulator);
+  // console.log("accum", accumulator);
   //  console.log("player", player);
 
   const country = player.country;
