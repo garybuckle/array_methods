@@ -102,9 +102,9 @@ const squashObject = {
 
 // QUESTION: Can we use the map method to iterate through the squashObject object?
 /**
-squashObject.map((player) => {
-     console.log("Mapped from an object -> Player", player);
-});
+* squashObject.map((player) => {
+*     console.log("Mapped from an object -> Player", player);
+* });
 **/
 
 /**
