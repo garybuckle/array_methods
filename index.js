@@ -182,6 +182,4 @@ const unknown = squashArrayValues.reduce((accumulator, player) => {
 
  */
 
-/**
- *  Now as an exercise you can create an array out of the object and map through it and get the values for the different * * *  countries. HINT: const myArray = Object.values(myObject); will give you an array from an object OR you can access the * *   arrays
- */
+
