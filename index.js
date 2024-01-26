@@ -151,13 +151,13 @@ const sumGames = games.reduce(
  * Reduce function challenge: What am I trying to find out here?
  **/
 const unknown = squashArrayValues.reduce((accumulator, player) => {
-  //  ******* Remove the comment to reveal the accumulator
+  //  ******* Remove the comments to reveal the accumulator and the player
   // console.log("accum", accumulator);
   //  console.log("player", player);
 
   const country = player.country;
 
-  //  ********* Remove the comment
+  //  ********* Remove the comment to see the country
   // console.log("country", country);
 
   // first pass through the iteration we push into an empty array
