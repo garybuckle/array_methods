@@ -6,10 +6,10 @@
  * by making it relevant.
  * The intention is to cover the usage of two array functions:- map and reduce
  * We start with a standard array and use map to iterate through the array. Then we look at taking an object, converting that into an array and iterating through that.
- * The challenge there is that often arrays contain objects that also need to be converted. Finally you are invited to complete the exercise by using map to
- * create arrays of the different countries that their players represent.
+ * The challenge there is that often arrays contain objects that also need to be converted. Finally you are invited 
+ * inspect a pre coded example and figure out what it is trying to do.
  **/
-
+// Lets start with a simple example of players, an array of strings
 // Here is our data stored in an array.
 const squashPlayers = [
   "Ali Farag: Egypt",
@@ -23,7 +23,7 @@ const squashPlayers = [
   "Amanda Sobhy: Egypt",
 ];
 
-// Simple mapping using an array of strings
+// use the map methond on our array
 squashPlayers.map((player) => {
   // ********** Uncomment to list out the array
     // console.log("Mapped from an array -> Player", player);
@@ -133,7 +133,7 @@ squashArrayValues.map((item) => {
 });
 
 /**
- * The reduce function
+ * The reduce function, here is an array containing games played. How may games have been played in total?
  */
 
 const games = [20, 23, 30, 15];
