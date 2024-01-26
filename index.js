@@ -23,7 +23,6 @@ const squashPlayers = [
   "Amanda Sobhy: Egypt",
 ];
 
-
 // Simple mapping using an array of strings
 squashPlayers.map((player) => {
   // ********** Uncomment to list out the array
@@ -106,10 +105,8 @@ const squashArrayValues = Object.values(squashObject);
 // Here we can log out the nature of our array and see what it looks like
 // console.log("Squash array", squashArrayValues)
 
-
 // QUESTION: WHAT TYPE OF DATA DOES THE ARRAY HOLD?. uncomment out the log to reveal the answer
 // console.log("Here is our Array", squashArrayValues);
-
 
 // This just links our code here with the html so that we can insert the data into our html page.
 const listel = document.querySelector("#lists");
@@ -132,14 +129,29 @@ squashArrayValues.map((item) => {
 });
 
 /**
- * Reduce function... lets find how many players from each country
+ * The reduce function
+ */
+
+const games = [20, 23, 30, 15];
+
+const initialValue = 0;
+const sumGames = games.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+// console.log("Total games played ", sumGames);
+// Expected output: 10
+
+/**
+ * Reduce function challenge: What am I trying to find out here?
  **/
-const countries = squashArrayValues.reduce((accumulator, player) => {
+const unknown = squashArrayValues.reduce((accumulator, player) => {
   //  ******* Remove the comment to reveal the accumulator
-    // console.log("accum", accumulator);
+  // console.log("accum", accumulator);
   //  console.log("player", player);
 
-   const country = player.country;
+  const country = player.country;
 
   //  ********* Remove the comment
   // console.log("country", country);
@@ -163,13 +175,17 @@ const countries = squashArrayValues.reduce((accumulator, player) => {
 }, {});
 
 // ******** remove the comment to reveal the result of the reduce method.
-//  console.log("The Countries", countries);
+//  console.log("unknown", unknown);
 
 // This just prints out the results on the html page
-const lands = document.querySelector("#countries");
-const listItem = document.createElement("li");
-listItem.textContent = countries.Egypt;
-lands.appendChild(listItem);
+
+/**
+ const lands = document.querySelector("#unknown");
+ const listItem = document.createElement("li");
+ listItem.textContent = unknown.Egypt;
+ lands.appendChild(listItem);
+
+ */
 
 /**
  *  Now as an exercise you can create an array out of the object and map through it and get the values for the different * * *  countries. HINT: const myArray = Object.values(myObject); will give you an array from an object OR you can access the * *   arrays

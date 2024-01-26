@@ -1,14 +1,14 @@
 {
   "eablokker.tabsSidebar.config.customKindGroupsOrder" : [
     "javascript",
-    "html",
     "css",
-    "markdown"
+    "markdown",
+    "html"
   ],
   "eablokker.tabsSidebar.config.customTabOrder" : [
     "\/Users\/garybuckle\/Coding\/array_methods\/index.js",
-    "\/Users\/garybuckle\/Coding\/array_methods\/README.md",
     "\/Users\/garybuckle\/Coding\/array_methods\/index.html",
+    "\/Users\/garybuckle\/Coding\/array_methods\/README.md",
     "\/Users\/garybuckle\/Coding\/array_methods\/style.css"
   ],
   "prettier.default-config.singleQuote" : "Disable"
