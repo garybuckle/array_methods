@@ -100,6 +100,13 @@ const squashObject = {
   },
 };
 
+// QUESTION: Can we use the map method to iterate through the squashObject object?
+/**
+squashObject.map((player) => {
+     console.log("Mapped from an object -> Player", player);
+});
+**/
+
 /**
  *  Create an array from our object, we are interested in the values, again this is purely to get an object for our map.
  *    Dont worry about the Object.values method, it merely create our squashValuesArray
