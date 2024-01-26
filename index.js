@@ -26,8 +26,12 @@ const squashPlayers = [
 // Simple mapping using an array of strings
 squashPlayers.map((player) => {
   // ********** Uncomment to list out the array
-  //  console.log("Mapped from an array -> Player", player);
+    // console.log("Mapped from an array -> Player", player);
+    // console.log(squashPlayers)
+
 });
+
+
 
 // This mapping is used to create elements in the html file. Purely for demo purposes since we don't cover interacting with the DOM.
 squashPlayers.map((item) => {
@@ -103,7 +107,7 @@ const squashObject = {
 
 const squashArrayValues = Object.values(squashObject);
 // Here we can log out the nature of our array and see what it looks like
-// console.log("Squash array", squashArrayValues)
+//  console.log("Squash array", squashArrayValues)
 
 // QUESTION: WHAT TYPE OF DATA DOES THE ARRAY HOLD?. uncomment out the log to reveal the answer
 // console.log("Here is our Array", squashArrayValues);
@@ -141,7 +145,7 @@ const sumGames = games.reduce(
 );
 
 // console.log("Total games played ", sumGames);
-// Expected output: 10
+
 
 /**
  * Reduce function challenge: What am I trying to find out here?
@@ -160,16 +164,7 @@ const unknown = squashArrayValues.reduce((accumulator, player) => {
   if (!accumulator[country]) {
     accumulator[country] = [];
   }
-  /**
-   *subsequent iterations push the object with the next name key on to the accumulator, incrementing the accumulator
-   * according to player.country. So the first pass shows accumulator as an empty object.
-   * second pass the player.country is Egypt so the object key is set to egypt and its value 1
-   * third pass is also Egypt so the egypt key value is set to 2.
-   * However the third pass has the country as Peru so  a Peru key with a value of 1
-   * is pushed on to the accumulator.
-   * Finally everything is reduced down to ONE object containing the representation values of players per country
-   * and as it seems to be in squash Egypt is the winner.
-   **/
+  
   accumulator[country].push(player.name);
   return accumulator;
 }, {});
