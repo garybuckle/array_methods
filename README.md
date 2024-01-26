@@ -21,6 +21,6 @@ For example, if you are using VSCode:
 - [The Reduce method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 This project is by no means a production ready, optimised project. It merely attempts to decipher two very useful
-array methods that are essential for web developers.
+array methods that are essential for web developers. There is also a pdf of the presentation used to explain the methods.
 
 I hope you find it useful!
